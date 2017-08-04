@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    tools:context="com.rachel.androidtvanim.MainActivity">
+
+    <com.rachel.androidtvanim.view.MainUpLayout
+        android:id="@+id/activity_base_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:animateLayoutChanges="true">
+
+        <com.rachel.androidtvanim.view.FlyBroadLayout
+            android:id="@+id/activity_base_mainupview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/list_focus"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:layout_marginLeft="@dimen/x40"
+            android:layout_marginTop="@dimen/y40"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/x200"
+                android:layout_height="@dimen/y200"
+                android:scaleType="fitXY"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:src="@mipmap/img1" />
+
+            <ImageView
+                android:layout_width="@dimen/x200"
+                android:layout_height="@dimen/y350"
+                android:scaleType="fitXY"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_marginLeft="@dimen/x20"
+                android:src="@mipmap/img2" />
+
+            <ImageView
+                android:layout_width="@dimen/x200"
+                android:layout_height="@dimen/y350"
+                android:scaleType="fitXY"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_marginLeft="@dimen/x20"
+                android:src="@mipmap/img3" />
+            <ImageView
+                android:layout_width="@dimen/x200"
+                android:layout_height="@dimen/y200"
+                android:scaleType="fitXY"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_marginLeft="@dimen/x20"
+                android:src="@mipmap/img4" />
+        </LinearLayout>
+
+
+    </com.rachel.androidtvanim.view.MainUpLayout>
+</RelativeLayout>
